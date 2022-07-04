@@ -1,171 +1,56 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en" >
 <head>
-<meta charset="utf-8">
-<title>Below the surface</title>
-  <link href="style 2.css" rel="stylesheet" type="text/css">
-	  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/alphardex/aqua.css@master/dist/aqua.min.css'><link rel="stylesheet" href="./style.css">
-	  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css'>
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap"rel="stylesheet'><link rel="stylesheet" href="./style.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Donate</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+
 </head>
 <body>
 <video playsinline autoplay muted loop poster="polina.jpg" id="bgvid">
   <source src="final back.mp4" type="video/mp4">
 	</video>
 	<div class="logo">
-	<p>Below the<br>SURFACE.</p></div>
-	
-	<div class="container">
-		<span class="word"><div class="h2">If there is no life</div><br><div class="h1">BELOW.</div><br><div class="h2">There is no life</div><br><div class="h1">ABOVE.</div></span>
-</div>
+	<p>Below the<br>SURFACE.</p></div>	
+<!-- partial:index.partial.html -->
+<!-- This is a recreation of Unfold's (https://dribbble.com/unfold) parallax scene: https://cdn.dribbble.com/users/14268/screenshots/3275340/northface.gif -->
+<div class="scrollDist"></div>
+<div class="main">
+  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+    <mask id="m">
+      <g class="cloud1">
+        <rect fill="#fff" width="100%" height="801" y="799" opacity="1" />
+        <image xlink:href="https://assets.codepen.io/721952/cloud1Mask.jpg" width="1200" height="800"/>
+      </g>
+    </mask>
+    
+    <image class="sky" xlink:href="f0.png"  width="1200" height="800" />
+    <image class="mountBg" xlink:href="f4.png" width="1200" height="900"/>    
+    <image class="mountMg" xlink:href="f3.png" width="300" height="1000"/>     
+    <image class="mountFg" xlink:href="f1.png" width="1200" height="800"/>
+    <text fill="#fff" x="250" y="200">YOU CAN HELP SAVE THE OCEANS.</text>
+	  
+	<polyline class="arrow" fill="#fff" points="599,250 599,289 590,279 590,282 600,292 610,282 610,279 601,289 601,250"/>
 
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-  <defs>   
-    <filter id="goovey">
-		    <feTurbulence type="fractalNoise" baseFrequency="0.01" numOctaves="1" result="warpper"/>
-          <feColorMatrix in="warpper" type="hueRotate">
-                <animate attributeType="XML" attributeName="values" values="0;110;150;210;360" dur="8s" repeatCount="indefinite"/>
-          </feColorMatrix>
-          <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="20" in="SourceGraphic"/>
-    </filter>
-  </defs>
-</svg>
-<!-- partial -->
- <div class="buttons"><div class="button1"><a href="../../rules/index.html"><b href="javascript:void(0)">
-  <span>Learn More</span>
-  <div class="wave"></div>
-	</b></a></div>
-	
-	  <div class="button2"><a href="../../donation/scrolltrigger-svg-text-mask (2)/scrolltrigger-svg-text-mask/dist/index.html"><c href="javascript:void(0)">
-  <span>Take Action</span>
-  <div class="wave"></div>
-		  </c></a></div></div>
-	
-	<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js'></script>
-<div class="navigation"><input type="checkbox" id="burger-toggle">
-<label for="burger-toggle" class="burger-menu">
-  <div class="line"></div>
-  <div class="line"></div>
-  <div class="line"></div>
-</label>
-<div class="menu">
-  <div class="menu-inner">
-    <ul class="menu-nav">
-      <li class="menu-nav-item"><a class="menu-nav-link" href="index.html"><span>
-            <div>Home</div>
-          </span></a></li>
-      <li class="menu-nav-item"><a class="menu-nav-link" href="../../targets/fancy-slider/fancy-slider/dist/index.html"><span>
-            <div>Threats</div>
-          </span></a></li>
-      <li class="menu-nav-item"><a class="menu-nav-link" href="../../minisrore/index.html"><span>
-            <div>Store</div>
-          </span></a></li>
-      <li class="menu-nav-item"><a class="menu-nav-link" href="../../donation/scrolltrigger-svg-text-mask (2)/scrolltrigger-svg-text-mask/dist/colorlib-regform-9/colorlib-regform-9/index.html"><span>
-            <div>Join us</div>
-          </span></a></li>
-    </ul>
-    <div class="gallery">
-      <div class="title">
-        <p></p>
-      </div>
-      <div class="images">
-        <a class="image-link" href="#">
-          <div class="image" data-label="Abusing resources"><img src="over.jpg" alt=""></div>
-        </a>
-        <a class="image-link" href="#">
-          <div class="image" data-label="Killing all species"><img src="killing.jpg" alt=""></div>
-        </a>
-        <a class="image-link" href="#">
-          <div class="image" data-label="Drop of life"><img src="life.jpg" alt=""></div>
-        </a>
-        <a class="image-link" href="#">
-          <div class="image" data-label="It is up to us"><img src="Us.jpg" alt=""></div>
-        </a>
-      </div>
-    </div>
-  </div>
-	</div></div>
-	<div class="wavy">
-<svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-<defs>
-<path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-</defs>
-<g class="parallax">
-<use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(72,61,139,0.7" />
-<use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(100,149,237,0.5)" />
-<use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(72,61,139,0.3)" />
-<use xlink:href="#gentle-wave" x="48" y="7" fill="cornflowerblue" />
-</g>
-</svg>
-	</div>
-	<!-- partial:index.partial.html -->
-<!-- Page Wrap -->
-<div class="containerss">
-  <div class="card1">
-    <h3 class="title"> Important facts you NEED to know about our oceans.</h3>
-    <div class="bar">
-      <div class="emptybar"></div>
-      <div class="filledbar"></div>
-    </div>
-  </div>
-  <div class="card">
-    <h3 class="title">Not Just<br>humans<br><p>Unique and wonderful creatures depend on our regional seas, including dugongs, dolphins, sea turtles, and different species of shark and whales. These rely on healthy habitats such as a diversity of coral reefs, seagrass meadows and mangroves.</p></h3>
-    <div class="bar">
-      <div class="emptybar"></div>
-      <div class="filledbar"></div>
-    </div>
-  </div>
-  <div class="card">
-    <h3 class="title">The plastic <br>problem<br><p>One of the advantages of plastic is that it is designed to last. Which is a blessing and a curse. Nearly all the plastic ever created still exists in some form today. Not only does it end up in our oceans, but it can also take hundreds of years to break down - if at all. Current estimates report that there are over 150 million tonnes of plastics in the ocean today and an estimated eight million metric tons of plastic waste entering our oceans every year. This equates to one garbage truck’s worth of plastic being dumped into our oceans every minute, the total weighing an equivalent of 90 aircraft carriers. On top of that, models project that by 2050, there will be more plastic by weight than fish in the oceans. </p> </h3>
-    <div class="bar">
-      <div class="emptybar"></div>
-      <div class="filledbar"></div>
-    </div>
-  </div>
-  <div class="card">
-    <h3 class="title">The plastic <br>solution?<br><p>It’s early days yet, but work is underway to clean up the five massive rubbish patches in our oceans. One pioneering venture in this field was founded in 2013 by an 18-year-old Dutch inventor called Boyan Slat. His company, the Ocean Cleanup, is developing a passive ocean cleanup technology, that just like the plastic, moves with the currents to catch it. By deploying a fleet of systems, The Ocean Cleanup has estimated to be able to remove 50% of the Great Pacific Garbage Patch every five years..</p> </h3>
-    <div class="bar">
-      <div class="emptybar"></div>
-      <div class="filledbar"></div>
-    </div>
-  </div>
-  <div class="card">
-       <h3 class="title">Welcome to <br>the dead zones<br><p>Agricultural runoff and sewage flowing into the ocean create areas of low oxygen, dubbed “dead zones”. In these areas, marine life is unable to survive, and ecosystems collapse. To date, scientists have identified 415 dead zones worldwide, with a total surface area of over 245,000km². That’s about the same size as the United Kingdom. </p> </h3>
-    <div class="bar">
-      <div class="emptybar"></div>
-      <div class="filledbar"></div>
-    </div>
-  </div>
-	  <div class="card">
-       <h3 class="title">Plenty more <br>fish in the sea?<br><p>Sadly, according to the International Union for Conservation of Nature (IUCN), less and less so. Roughly 1,414 species of fish, or 5% of known species, are endangered. In May 2020, for the first time in modern day history, the IUCN formally declared a marine fish species as extinct. Despite extensive searches over the years, the smooth handfish (sympterichthys unipennis), a shallow-water bottom-dweller with spiky fins and a barb-like protrusion on its forehead, has not been seen since 1802, when French biologist François Péron scooped one up near the coast of Tasmania.</p> </h3>
-    <div class="bar">
-      <div class="emptybar"></div>
-      <div class="filledbar"></div>
-    </div>
-  </div>
-		  <div class="card">
-       <h3 class="title">One fish, <br>two fish<br><p>In 2015, in the small Madagascar village of Andavadoaka, locals who rely on fishing for their livelihoods were asked to close some of their favourite fishing zones for two months, allowing time for the species to breed and for populations to grow again. After the hiatus, they returned to fishing, and were surprised to find their catches had doubled in size. More importantly, their earnings tripled. Twenty other villages have now followed their lead.</p> </h3>
-    <div class="bar">
-      <div class="emptybar"></div>
-      <div class="filledbar"></div>
-    </div>
-  </div>
-		  <div class="card">
-       <h3 class="title">Canaries of <br>the sea<br><p>Beluga whales, weighing in at up to 1.5 tons each, are extremely sociable mammals. They do everything with their pods, which can range in size from just a few in number to several hundred. Their signature bulbous foreheads (called “melons”) are flexible, allowing beluga whales to pull faces. These talented creatures can also whistle and chirp, a fact that has earned them the nickname “canaries of the sea”. Unfortunately, shipping and other human marine activity cause underwater noise pollution that interferes with their communication, making it harder for them to find food, find mates, and look after their young.</p> </h3>
-    <div class="bar">
-      <div class="emptybar"></div>
-      <div class="filledbar"></div>
-    </div>
-  </div>
-		  <div class="card">
-       <h3 class="title">Space <br>Invaders<br><p>With ever-expanding global trade, protecting ecosystems from invasive species is harder than ever. Scientists estimate there are 5,000 to 10,000 species traveling in cargo ships at any given time, floating in the ballast water used to keep the ships stable at sea. When the water is released on arrival, so are those living creatures. Zebra mussels are said to have attached themselves to the sides of ships travelling from Central Asia, then set up home in the Great Lakes of North America. There, they now clog boat engines, damage water pipes – and, most significantly, threaten native species.</p> </h3>
-    <div class="bar">
-      <div class="emptybar"></div>
-      <div class="filledbar"></div>
-    </div>
-  </div>
+    <g mask="url(#m)">
+      <rect fill="#fff" width="100%" height="100%" />      
+      <text x="200" y="200" fill="#17141d">SAVE THE OCEANS, SAVE OUR FUTUTRE.</text>
+    </g>
+    <rect id="arrowBtn" width="100" height="100" opacity="0" x="550" y="220" style="cursor:pointer"/>
+	  
+  </svg>
 </div>
-	</body>
+	
+			 <div class="buttons"><div class="button1"><b href="javascript:void(0)">
+  <span>Donate Now</span>
+  <div class="wave"></div>
+	</b></div></div>
+<!-- partial -->
+  <script src='https://unpkg.co/gsap@3/dist/gsap.min.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollToPlugin3.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js'></script><script  src="./script.js"></script>
+
+</body>
 </html>

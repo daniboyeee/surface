@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+.main {margin-top: 47px;}
+body, html {
+  width:100%;
+  height:100%;
+  font-family:'Playfair Display Black';
+  font-size:45px;
+  text-align:center;
+	font-weight: bolder;
+}
+
+div {
+  position:absolute;
+}
+
+.sky{ filter: brightness(60%);}
+.moutBg{ filter: brightness(70%);}
+.moubtMg{ filter: brightness(80%);}
+.cloud2{ filter: brightness(90%);}
+.mount fg{filter: brightness(100%);}
+
+.arrow { z-index: 1000;}
+
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  filter: brightness(30%);
+	z-index: -2;
+}
+.logo
+p { position: fixed;
+  top: 6.5vh;
+  left: 7vw;
+font-family:"Playfair Display SemiBold";
+color: aliceblue;
+font-size: 20px;
+	line-height: 18px;
+	z-index: 6;
+}
+.button1{
+  box-sizing: border-box;
+  font-family: "Playfair Display";
+	display: block;
+	font-weight: 100;
+}
+
+b {
+  width: 180px;
+	height: 60px;
+ padding-top: 13px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+  position: relative;
+  display: block;
+  text-decoration: none;
+  overflow: hidden;
+	border-bottom-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+
+b:hover .wave {
+  top: -120px;
+}
+b span {
+  position: absolute;
+  z-index: 1;
+  color: white;
+  font-size: 25px;
+  letter-spacing: normal;
+	text-align: center;
+	margin-left: -60px;
+	margin-top: 16px;
+}
+b .wave {
+  width: 200px;
+  height: 200px;
+  background-color: cornflowerblue;
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.8);
+  position: absolute;
+  left: 0;
+  top: -80px;
+  transition: 0.4s;
+}
+b .wave::before, a .wave::after {
+  width: 200%;
+  height: 200%;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -75%);
+}
+b .wave::before {
+  border-radius: 35%;
+  background-color: #17141d;
+  animation: wave 10s linear infinite;
+}
+b .wave::after {
+  border-radius: 40%;
+  background-color: rgba(20, 20, 20, 0.5);
+  animation: wave 10s linear infinite;
+}
+
+@keyframes wave {
+  0% {
+    transform: translate(-50%, -75%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -75%) rotate(360deg);
+  }
+}
+
+.buttons
+{width: 100%;
+text-align: center;
+margin-top: 500px;
+z-index: 1;
+position: fixed;}
+
+.button1, .button2
+{display: inline-block;
+padding: 20px;
+position: relative;}
